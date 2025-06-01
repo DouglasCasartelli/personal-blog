@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Aprendendo HTML5</title>
+    <link rel="stylesheet" href="/desenvolvimento-web/html/css/style.css">
+    <style>
+        .top-bar {
+            background-color: #3093be;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="main-nav">
+            <li><a href="/desenvolvimento-web/html/estrutura-html.html">HTML</a></li>
+            <li><a href="/desenvolvimento-web/html/estrutura-css.html">CSS</a></li>
+            <li><a href="/desenvolvimento-web/html/estrutura-js.html">JavaScript</a></li>
+        </ul>
+    </nav>
+    <div class="top-bar">
+        <img src="/desenvolvimento-web/html/img/css.png" alt="Icon HTML5">
+    </div>
+    <h1>O que é CSS?</h1>
+    <p>CSS (Cascading Style Sheets) é a linguagem usada para estilizar páginas HTML, ou seja, definir como os elementos devem aparecer visualmente no navegador.
+        Com o CSS, é possível controlar cores, tamanhos, margens, espaçamentos, fontes, posicionamentos, e até criar animações e efeitos visuais.
+        Enquanto o HTML estrutura o conteúdo, o CSS se preocupa com a aparência. O nome "cascading" (cascata) se refere à forma como os estilos são aplicados:
+        regras mais específicas substituem regras mais genéricas, e existe uma hierarquia de prioridade que determina qual estilo prevalecerá em caso de conflito.</p>
+
+    <p>O CSS pode ser aplicado de três formas: inline (diretamente dentro do elemento HTML com o atributo style), interno (usando a tag &lt;style&gt; dentro do &lt;head&gt; do HTML),
+    ou externo (através de arquivos .css vinculados ao HTML com a tag &lt;link&gt;). A melhor prática é usar arquivos externos, pois facilita a manutenção e a reutilização
+    do estilo em várias páginas. O CSS utiliza seletores para identificar quais elementos serão estilizados. Por exemplo, h1 { color: blue; } define que todos os títulos
+    h1 terão a cor azul. Além disso, o CSS permite a criação de layouts responsivos, ou seja, que se adaptam a diferentes tamanhos de tela, o que é essencial no
+    desenvolvimento moderno de sites.</p>
+<!--
+        Para comentar um código, deve ser usada essa sitaxe
+        -->
+
+    <!--Para criar uma tabela basta utilizar a tag table-->
+    <h2>Propriedades de Aparência / Cor</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Propriedade</th>
+            <th>Função</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td><code>color</code></td><td>Cor do texto.</td></tr>
+        <tr><td><code>background-color</code></td><td>Cor de fundo do elemento.</td></tr>
+        <tr><td><code>background-image</code></td><td>Imagem de fundo.</td></tr>
+        <tr><td><code>background-size</code></td><td>Tamanho da imagem de fundo.</td></tr>
+        <tr><td><code>background-repeat</code></td><td>Define se a imagem de fundo se repete.</td></tr>
+        <tr><td><code>background-position</code></td><td>Posição da imagem de fundo.</td></tr>
+        <tr><td><code>opacity</code></td><td>Transparência do elemento.</td></tr>
+        <tr><td><code>box-shadow</code></td><td>Sombra ao redor do elemento.</td></tr>
+        <tr><td><code>text-shadow</code></td><td>Sombra no texto.</td></tr>
+        <tr><td><code>border</code></td><td>Borda do elemento.</td></tr>
+        <tr><td><code>border-radius</code></td><td>Arredondamento dos cantos da borda.</td></tr>
+        <tr><td><code>outline</code></td><td>Contorno externo ao elemento.</td></tr>
+        <tr><td><code>filter</code></td><td>Efeitos visuais como blur, brilho etc.</td></tr>
+        <tr><td><code>mix-blend-mode</code></td><td>Define como camadas se misturam.</td></tr>
+        <tr><td><code>visibility</code></td><td>Controla se o elemento está visível ou não.</td></tr>
+    </tbody>
+</table>
+
+<h2>Propriedades de Tamanho e Espaçamento (Box Model)</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Propriedade</th>
+            <th>Função</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td><code>width</code></td><td>Largura do elemento.</td></tr>
+        <tr><td><code>height</code></td><td>Altura do elemento.</td></tr>
+        <tr><td><code>max-width</code></td><td>Largura máxima.</td></tr>
+        <tr><td><code>min-width</code></td><td>Largura mínima.</td></tr>
+        <tr><td><code>max-height</code></td><td>Altura máxima.</td></tr>
+        <tr><td><code>min-height</code></td><td>Altura mínima.</td></tr>
+        <tr><td><code>padding</code></td><td>Espaço interno entre conteúdo e borda.</td></tr>
+        <tr><td><code>padding-top</code></td><td>Espaço interno superior.</td></tr>
+        <tr><td><code>padding-right</code></td><td>Espaço interno à direita.</td></tr>
+        <tr><td><code>padding-bottom</code></td><td>Espaço interno inferior.</td></tr>
+        <tr><td><code>padding-left</code></td><td>Espaço interno à esquerda.</td></tr>
+        <tr><td><code>margin</code></td><td>Espaço externo ao redor do elemento.</td></tr>
+        <tr><td><code>margin-top</code></td><td>Margem superior.</td></tr>
+        <tr><td><code>margin-bottom</code></td><td>Margem inferior.</td></tr>
+        <tr><td><code>box-sizing</code></td><td>Define como width/height são calculados.</td></tr>
+    </tbody>
+</table>
+
+<h2>Propriedades de Tipografia (Texto e Fonte)</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Propriedade</th>
+            <th>Função</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td><code>font-family</code></td><td>Fonte utilizada no texto.</td></tr>
+        <tr><td><code>font-size</code></td><td>Tamanho da fonte.</td></tr>
+        <tr><td><code>font-weight</code></td><td>Espessura da fonte.</td></tr>
+        <tr><td><code>font-style</code></td><td>Estilo (normal, itálico, etc).</td></tr>
+        <tr><td><code>line-height</code></td><td>Altura entre linhas de texto.</td></tr>
+        <tr><td><code>letter-spacing</code></td><td>Espaço entre letras.</td></tr>
+        <tr><td><code>word-spacing</code></td><td>Espaço entre palavras.</td></tr>
+        <tr><td><code>text-align</code></td><td>Alinhamento do texto.</td></tr>
+        <tr><td><code>text-decoration</code></td><td>Decoração como sublinhado ou linha.</td></tr>
+        <tr><td><code>text-transform</code></td><td>Transformação de caixa (maiúsculas, etc).</td></tr>
+        <tr><td><code>white-space</code></td><td>Tratamento de espaços e quebras.</td></tr>
+        <tr><td><code>direction</code></td><td>Direção do texto (esquerda para direita, etc).</td></tr>
+        <tr><td><code>quotes</code></td><td>Define estilo de aspas.</td></tr>
+        <tr><td><code>vertical-align</code></td><td>Alinhamento vertical do texto.</td></tr>
+        <tr><td><code>overflow-wrap</code></td><td>Quebra automática de palavras.</td></tr>
+    </tbody>
+</table>
+
+<h2>Propriedades de Layout / Posicionamento</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Propriedade</th>
+            <th>Função</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td><code>display</code></td><td>Tipo de exibição do elemento (block, flex...)</td></tr>
+        <tr><td><code>position</code></td><td>Tipo de posicionamento.</td></tr>
+        <tr><td><code>top</code></td><td>Distância do topo.</td></tr>
+        <tr><td><code>right</code></td><td>Distância da borda direita.</td></tr>
+        <tr><td><code>bottom</code></td><td>Distância inferior.</td></tr>
+        <tr><td><code>left</code></td><td>Distância da borda esquerda.</td></tr>
+        <tr><td><code>z-index</code></td><td>Ordem de sobreposição dos elementos.</td></tr>
+        <tr><td><code>float</code></td><td>Define se o elemento flutua à esquerda ou direita.</td></tr>
+        <tr><td><code>clear</code></td><td>Controla limpeza de elementos flutuantes.</td></tr>
+        <tr><td><code>overflow</code></td><td>Controle de conteúdo que extrapola o elemento.</td></tr>
+        <tr><td><code>visibility</code></td><td>Visibilidade do elemento.</td></tr>
+        <tr><td><code>flex</code></td><td>Tamanho relativo no Flexbox.</td></tr>
+        <tr><td><code>flex-grow</code></td><td>Fator de crescimento no Flexbox.</td></tr>
+        <tr><td><code>flex-shrink</code></td><td>Fator de encolhimento no Flexbox.</td></tr>
+        <tr><td><code>order</code></td><td>Ordem de exibição no Flexbox.</td></tr>
+    </tbody>
+</table>
+
+<h2>Propriedades de Animação e Transição</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Propriedade</th>
+            <th>Função</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td><code>transition</code></td><td>Atalho para várias propriedades de transição.</td></tr>
+        <tr><td><code>transition-duration</code></td><td>Duração da transição.</td></tr>
+        <tr><td><code>transition-delay</code></td><td>Atraso da transição.</td></tr>
+        <tr><td><code>transition-property</code></td><td>Propriedades que serão animadas.</td></tr>
+        <tr><td><code>transition-timing-function</code></td><td>Curva de velocidade da transição.</td></tr>
+        <tr><td><code>animation</code></td><td>Atalho geral para animações CSS.</td></tr>
+        <tr><td><code>animation-name</code></td><td>Nome da animação declarada.</td></tr>
+        <tr><td><code>animation-duration</code></td><td>Duração da animação.</td></tr>
+        <tr><td><code>animation-delay</code></td><td>Atraso da animação.</td></tr>
+        <tr><td><code>animation-iteration-count</code></td><td>Número de repetições.</td></tr>
+        <tr><td><code>animation-direction</code></td><td>Direção da animação (normal, reverse).</td></tr>
+        <tr><td><code>animation-timing-function</code></td><td>Curva de velocidade da animação.</td></tr>
+        <tr><td><code>animation-fill-mode</code></td><td>Define o estilo após a animação.</td></tr>
+        <tr><td><code>animation-play-state</code></td><td>Define se a animação está em execução ou pausada.</td></tr>
+        <tr><td><code>transform</code></td><td>Transformações visuais (girar, escalar, mover).</td></tr>
+    </tbody>
+</table>
+
+
+
+</body>
+</html>

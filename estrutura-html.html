@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Aprendendo HTML5</title>
+    <link rel="stylesheet" href="/desenvolvimento-web/html/css/style.css">
+</head>
+<body>
+    <nav>
+        <ul class="main-nav">
+            <li><a href="/desenvolvimento-web/html/estrutura-html.html">HTML</a></li>
+            <li><a href="/desenvolvimento-web/html/estrutura-css.html">CSS</a></li>
+            <li><a href="/desenvolvimento-web/html/estrutura-js.html">JavaScript</a></li>
+        </ul>
+    </nav>
+    <div class="top-bar">
+        <img src="/desenvolvimento-web/html/img/html5.png" alt="Icon HTML5">
+    </div>
+    <h1>O que é HTML?</h1>
+    <p>HTML (HyperText Markup Language) é a linguagem principal utilizada para estruturar páginas na web. Ela não é uma linguagem de programação, mas sim de marcação, ou seja,
+        serve para organizar e descrever o conteúdo de forma que os navegadores (como Chrome ou Firefox) saibam como exibi-lo ao usuário. O termo "hipertexto" refere-se à capacidade de criar links (hiperligações)
+        entre documentos ou partes de uma mesma página, o que é uma das bases da navegação na internet. HTML utiliza tags (como &lt;p&gt;, &lt;h1&gt;, &lt;a&gt;, etc.)
+        para definir cada elemento do conteúdo, como parágrafos, títulos, links, imagens, listas e muito mais.</p>
+
+    <p>A estrutura de um documento HTML segue um padrão que começa com a declaração &lt;!DOCTYPE html&gt;, indicando que o código está escrito na versão HTML5.
+        Em seguida, vem a tag &lt;html&gt;, que envolve todo o conteúdo da página. Dentro dela, a seção &lt;head&gt; traz informações sobre o documento (como título,
+        codificação e links para estilos CSS), enquanto a seção &lt;body&gt; contém tudo o que será visível ao usuário, como textos, imagens, vídeos e tabelas.
+        HTML é essencial para a construção de qualquer site, servindo como base para o CSS, que estiliza a página, e o JavaScript, que adiciona
+        funcionalidades interativas.</p>
+<!--
+        Para comentar um código, deve ser usada essa sitaxe
+        -->
+
+    <h2>Estrutura Básica do Documento</h2>
+
+    <!--Para criar uma tabela basta utilizar a tag table-->
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Função</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;DOCTYPE html&gt;</code></td>
+                <td>Define o tipo de documento (HTML5, por exemplo).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;html&gt;</code></td>
+                <td>Elemento raiz do documento HTML.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;head&gt;</code></td>
+                <td>Contém metadados (título, links, scripts, etc).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;title&gt;</code></td>
+                <td>Define o título da página (aparece na aba do navegador).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;meta&gt;</code></td>
+                <td>Metadados como charset, viewport, autor, etc.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;link&gt;</code></td>
+                <td>Referencia arquivos esternos (como CSS).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;script&gt;</code></td>
+                <td>Adiciona ou referencia scripts JavaScript.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;style&gt;</code></td>
+                <td>Define estilos CSS diretamente na página</td>
+            </tr>
+            <tr>
+                <td><code>&lt;body&gt;</code></td>
+                <td>Contém todo o conteúdo visível da página.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Conteúdo Semântico / Estrutura</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Função</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;header&gt;</code></td>
+                <td>Cabeçalho da página ou seção.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;nav&gt;</code></td>
+                <td>Menu de navegação.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;main&gt;</code></td>
+                <td>Conteúdo principal da página.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;section&gt;</code></td>
+                <td>Seção temática de conteúdo.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;article&gt;</code></td>
+                <td>Conteúdo independente, como post de blog.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;footer&gt;</code></td>
+                <td>Rodapé da página ou seção.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;div&gt;</code></td>
+                <td>Contêiner genérico sem significado semântico.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;span&gt;</code></td>
+                <td>Contêiner em linha genérico para estilização.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Texto e Formatação</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Função</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;h1&gt; a &lt;h6&gt;</code></td>
+                <td>Títulos e subtítulos, do mais importante ao menos.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;p&gt;</code></td>
+                <td>Parágrafo do texto.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;br&gt;</code></td>
+                <td>Quebra de linha.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;hr&gt;</code></td>
+                <td>Linha horizontal (separador).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;strong&gt;</code></td>
+                <td>Texto em negrito com ênfase semântica (texto importante).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;em&gt;</code></td>
+                <td>Texto em itálico com ênfase semântica (gerar ênfase no texto).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;small&gt;</code></td>
+                <td>Texto menor.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Listas</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Tag</th>
+            <th>Função</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>&lt;ul&gt;</code></td>
+            <td>Lista não ordenada (com marcadores).</td>
+        </tr>
+        <tr>
+            <td><code>&lt;ol&gt;</code></td>
+            <td>Lista ordenada (com números).</td>
+        </tr>
+        <tr>
+            <td><code>&lt;li&gt;</code></td>
+            <td>Item da lista (usado dentro de &lt;ul&gt; ou &lt;ol&gt;).</td>
+        </tr>
+        <tr>
+            <td><code>&lt;dl&gt;</code></td>
+            <td>Lista de definição.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;dt&gt;</code></td>
+            <td>Termo definido na lista de definição.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;dd&gt;</code></td>
+            <td>Descrição do termo na lista de definição.</td>
+        </tr>
+    </tbody>
+</table>
+<h2>Mídia</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Tag</th>
+            <th>Função</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>&lt;img&gt;</code></td>
+            <td>Exibir imagens.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;audio&gt;</code></td>
+            <td>Reproduzir áudio.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;video&gt;</code></td>
+            <td>Reproduzir vídeo.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;source&gt;</code></td>
+            <td>Fonte de mídia (usado dentro de &lt;audio&gt; ou &lt;video&gt;).</td>
+        </tr>
+        <tr>
+            <td><code>&lt;figure&gt;</code></td>
+            <td>Container para mídia com legenda.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;figcaption&gt;</code></td>
+            <td>Legenda de uma imagem ou conteúdo de mídia.</td>
+        </tr>
+    </tbody>
+</table>
+<h2>Tabelas (Complemento)</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Tag</th>
+            <th>Função</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>&lt;caption&gt;</code></td>
+            <td>Título da tabela.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;thead&gt;</code></td>
+            <td>Cabeçalho da tabela.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;tbody&gt;</code></td>
+            <td>Corpo da tabela.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;tfoot&gt;</code></td>
+            <td>Rodapé da tabela.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;tr&gt;</code></td>
+            <td>Linha da tabela.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;th&gt;</code></td>
+            <td>Célula de cabeçalho (negrito e centralizada por padrão).</td>
+        </tr>
+        <tr>
+            <td><code>&lt;td&gt;</code></td>
+            <td>Célula de dados.</td>
+        </tr>
+    </tbody>
+</table>
+<h2>Formulários</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Tag</th>
+            <th>Função</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>&lt;form&gt;</code></td>
+            <td>Container do formulário.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;input&gt;</code></td>
+            <td>Campo de entrada de dados.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;label&gt;</code></td>
+            <td>Rótulo para um campo do formulário.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;textarea&gt;</code></td>
+            <td>Campo de texto com várias linhas.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;select&gt;</code></td>
+            <td>Menu suspenso (dropdown).</td>
+        </tr>
+        <tr>
+            <td><code>&lt;option&gt;</code></td>
+            <td>Opção dentro do select.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;button&gt;</code></td>
+            <td>Botão clicável.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;fieldset&gt;</code></td>
+            <td>Agrupamento de campos do formulário.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;legend&gt;</code></td>
+            <td>Título do agrupamento de campos (usado com fieldset).</td>
+        </tr>
+    </tbody>
+</table>
+<h2>Links e Navegação</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Tag</th>
+            <th>Função</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>&lt;a&gt;</code></td>
+            <td>Cria um link para outra página ou recurso.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;link&gt;</code></td>
+            <td>Relaciona recursos externos (como arquivos CSS) ao documento.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;nav&gt;</code></td>
+            <td>Define uma seção de navegação com links internos.</td>
+        </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Aprendendo HTML5</title>
+    <link rel="stylesheet" href="/desenvolvimento-web/html/css/style.css">
+    <style>
+        .top-bar {
+            background-color: #f3cf40;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="main-nav">
+            <li><a href="/desenvolvimento-web/html/estrutura-html.html">HTML</a></li>
+            <li><a href="/desenvolvimento-web/html/estrutura-css.html">CSS</a></li>
+            <li><a href="/desenvolvimento-web/html/estrutura-js.html">JavaScript</a></li>
+        </ul>
+    </nav>
+    <div class="top-bar">
+        <img src="/desenvolvimento-web/html/img/js.png" alt="Icon HTML5">
+    </div>
+    <h1>Exemplos de tags</h1>
+    <p>JavaScript é uma linguagem de programação amplamente utilizada para tornar páginas web interativas e dinâmicas. Enquanto o HTML estrutura o conteúdo e o
+        CSS cuida da aparência visual, o JavaScript permite que o navegador responda a ações do usuário, manipule elementos da página em tempo real, valide formulários,
+        crie animações, carregue dados sem precisar atualizar a página (usando AJAX), entre muitas outras funcionalidades. Por ser uma linguagem interpretada
+        diretamente no navegador, o JavaScript é essencial para o desenvolvimento front-end moderno e é suportado por todos os navegadores atuais.</p>
+
+    <p>Além disso, o JavaScript evoluiu bastante e hoje também é usado no desenvolvimento de aplicações no lado do servidor, através de ambientes como o Node.js.
+        Isso permite que desenvolvedores usem uma única linguagem para construir tanto o front-end quanto o back-end de um site ou aplicativo. O JavaScript é uma
+        linguagem de programação versátil, baseada em protótipos, que suporta programação orientada a objetos, funcional e imperativa, tornando-a poderosa e flexível
+        para uma ampla variedade de projetos na web e além.</p>
+<!--
+        Para comentar um código, deve ser usada essa sitaxe
+        -->
+
+    <h2>Principais Objetos</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Exemplo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Objetos -->
+        <tr><td>document</td><td>Representa a página web atual (DOM).</td><td><code>document.getElementById()</code></td></tr>
+        <tr><td>window</td><td>Objeto global que representa a janela do navegador.</td><td><code>window.alert()</code></td></tr>
+        <tr><td>Array</td><td>Estrutura para armazenar listas ordenadas.</td><td><code>let arr = [];</code></td></tr>
+        <tr><td>Math</td><td>Fornece propriedades e métodos matemáticos.</td><td><code>Math.random()</code></td></tr>
+        <tr><td>Date</td><td>Representa datas e horas.</td><td><code>new Date()</code></td></tr>
+        <tr><td>String</td><td>Objeto que representa texto e seus métodos.</td><td><code>"texto".length</code></td></tr>
+        <tr><td>JSON</td><td>Objeto para manipular dados JSON.</td><td><code>JSON.parse()</code></td></tr>
+        <tr><td>RegExp</td><td>Objeto para expressões regulares.</td><td><code>/ab+c/.test('abc')</code></td></tr>
+        <tr><td>Promise</td><td>Objeto para tratamento assíncrono.</td><td><code>new Promise()</code></td></tr>
+        <tr><td>console</td><td>Objeto para debug no navegador.</td><td><code>console.log()</code></td></tr>
+</table>
+
+    <h2>Principais Métodos</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Exemplo</th>
+        </tr>
+    </thead>
+        <!-- Métodos -->
+        <tr><td>getElementById()</td><td>Seleciona elemento HTML por id.</td><td><code>document.getElementById('id')</code></td></tr>
+        <tr><td>querySelector()</td><td>Seleciona o primeiro elemento que corresponda ao seletor CSS.</td><td><code>document.querySelector('.classe')</code></td></tr>
+        <tr><td>addEventListener()</td><td>Adiciona um ouvinte de evento a um elemento.</td><td><code>element.addEventListener('click', fn)</code></td></tr>
+        <tr><td>push()</td><td>Adiciona elemento ao fim de um array.</td><td><code>arr.push(10)</code></td></tr>
+        <tr><td>pop()</td><td>Remove e retorna o último elemento do array.</td><td><code>arr.pop()</code></td></tr>
+        <tr><td>slice()</td><td>Retorna uma cópia de parte do array ou string.</td><td><code>arr.slice(1,3)</code></td></tr>
+        <tr><td>replace()</td><td>Substitui parte de uma string por outra.</td><td><code>str.replace('a', 'b')</code></td></tr>
+        <tr><td>toFixed()</td><td>Formata número com casas decimais.</td><td><code>(3.1415).toFixed(2)</code></td></tr>
+        <tr><td>toUpperCase()</td><td>Converte string para maiúsculas.</td><td><code>"abc".toUpperCase()</code></td></tr>
+        <tr><td>includes()</td><td>Verifica se array/string contém valor.</td><td><code>arr.includes(3)</code></td></tr>
+</table>
+
+    <h2>Principais Funções</h2>
+    
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Exemplo</th>
+        </tr>
+    </thead>
+        <!-- Funções -->
+        <tr><td>alert()</td><td>Exibe caixa de alerta com mensagem.</td><td><code>alert('Olá!')</code></td></tr>
+        <tr><td>console.log()</td><td>Exibe mensagens no console para debug.</td><td><code>console.log('teste')</code></td></tr>
+        <tr><td>setTimeout()</td><td>Executa função após delay em milissegundos.</td><td><code>setTimeout(fn, 1000)</code></td></tr>
+        <tr><td>parseInt()</td><td>Converte string para número inteiro.</td><td><code>parseInt('123')</code></td></tr>
+        <tr><td>parseFloat()</td><td>Converte string para número decimal.</td><td><code>parseFloat('3.14')</code></td></tr>
+        <tr><td>isNaN()</td><td>Verifica se valor não é número.</td><td><code>isNaN('abc')</code></td></tr>
+        <tr><td>JSON.parse()</td><td>Converte string JSON em objeto JS.</td><td><code>JSON.parse('{}')</code></td></tr>
+        <tr><td>JSON.stringify()</td><td>Converte objeto JS em string JSON.</td><td><code>JSON.stringify(obj)</code></td></tr>
+        <tr><td>prompt()</td><td>Exibe caixa para entrada do usuário.</td><td><code>prompt('Seu nome?')</code></td></tr>
+        <tr><td>confirm()</td><td>Exibe caixa para confirmação do usuário.</td><td><code>confirm('Confirma?')</code></td></tr>
+    </tbody>
+</table>
+
+
+
+</body>
+</html>
